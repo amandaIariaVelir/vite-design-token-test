@@ -41,7 +41,7 @@ jobs:
         run: 'npm i && npm run transform-tokens'
       # We now create a pull request 
       - name: Create PR 
-        uses: peter-evans/create-pull-request@v3
+        uses: peter-evans/create-pull-request@v5
         with:
           commit-message: "Tokens updated"
           title: "Design tokens updated"
@@ -49,4 +49,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           # this parameter is optional and defaults to master but I am using main
-          BRANCH_NAME: 'main'
+          BRANCH_NAME: 'develop'
