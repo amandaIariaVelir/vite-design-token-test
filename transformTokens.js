@@ -1,5 +1,5 @@
-import StyleDictionary from "style-dictionary";
-import baseConfig from "./config.json" assert {type: 'json'};
+const StyleDictionary = require("style-dictionary");
+const baseConfig = require("./config.json");
 
 StyleDictionary.registerTransform({
   name: 'size/px',
