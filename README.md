@@ -29,7 +29,7 @@ Figma Plugin Github
 https://github.com/lukasoppermann/design-tokens
 
 Design Token transformer repo (a lot is based off of this repo)
-https://github.com/lukasoppermann/design-token-transformer#personal-access-token
+https://github.com/lukasoppermann/design-token-transformer
 
 Style dictonary from amazon
 https://amzn.github.io/style-dictionary/#/
