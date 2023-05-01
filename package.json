@@ -9,9 +9,7 @@
     "preview": "vite preview",
     "start": "npm run transform-tokens",
     "transform-tokens": "node ./transformTokens.js",
-    "test": "jest tests --coverage=false",
-    "transform:android": "node ./examples/android/build.js",
-    "transform:ios": "node ./examples/ios/build.js"
+    "test": "jest tests --coverage=false"
   },
   "dependencies": {
     "react": "^18.2.0",
