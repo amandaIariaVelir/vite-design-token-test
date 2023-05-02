@@ -3,7 +3,7 @@
   "platforms": {
     "scss": {
       "transformGroup": "custom/scss",
-      "buildPath": "tokens/transform/scss/",
+      "buildPath": "frontend/assets/tokens/transform/scss/",
       "files": [{
         "destination": "_variables.scss",
         "format": "scss/variables"
@@ -11,7 +11,7 @@
     },
     "css": {
       "transformGroup": "custom/css",
-      "buildPath": "tokens/transform/css/",
+      "buildPath": "frontend/assets/tokens/transform/css/",
       "files": [{
         "destination": "_variables.css",
         "format": "css/variables",
@@ -23,7 +23,7 @@
     },
     "json-flat": {
       "transformGroup": "js",
-      "buildPath": "tokens/transform/json/",
+      "buildPath": "frontend/assets/tokens/transform/json/",
       "files": [
         {
           "destination": "styles.json",
