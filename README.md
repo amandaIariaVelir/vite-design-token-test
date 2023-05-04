@@ -14,6 +14,7 @@ https://www.figma.com/file/Nqhhjhk5y4to2WjiOIvnk9/Testing-Design-Tokens-Github?n
   - "allow github actions to create and approve pull requests"
 - Create personal access tokens 
   - https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
+  - Visit https://github.com/settings/tokens/new
   - make sure repo and actions are checked
 - URL to send https://api.github.com/repos/:username/:repo/dispatches
   - EXample for this one https://api.github.com/repos/amandaIariaVelir/vite-design-token-test/dispatches
