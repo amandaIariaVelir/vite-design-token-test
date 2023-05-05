@@ -21,6 +21,7 @@ export const Primary: Story = {
     primary: true,
     label: 'Button',
   },
+
 };
 
 export const Secondary: Story = {

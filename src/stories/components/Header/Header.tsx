@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Button } from '../Button/Button.tsx';
 import './header.scss';
 
@@ -12,7 +13,15 @@ interface HeaderProps {
   onCreateAccount: () => void;
 }
 
-export const Header = ({ user, onLogin, onLogout, onCreateAccount }: HeaderProps) => (
+
+export const Header = ({ user, onLogin, onLogout, onCreateAccount }: HeaderProps) => {
+  const [logoutText, setLogoutText] = useState("Log Out");
+
+  onLogout = () => {
+    setLogoutText("clicked");
+  }
+
+  return (
   <header>
     <div className="wrapper">
       <div>
@@ -40,7 +49,7 @@ export const Header = ({ user, onLogin, onLogout, onCreateAccount }: HeaderProps
             <span className="welcome">
               Welcome, <b>{user.name}</b>!
             </span>
-            <Button size="small" onClick={onLogout} label="Log out" />
+            <Button size="small" onClick={onLogout} label={logoutText} />
           </>
         ) : (
           <>
@@ -51,4 +60,4 @@ export const Header = ({ user, onLogin, onLogout, onCreateAccount }: HeaderProps
       </div>
     </div>
   </header>
-);
+)};

@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Header } from './Header';
+import { HeaderTestExample } from './Header-example.test.ts';
+import { Header } from './Header.tsx';
 
 const meta = {
   title: 'Example/Header',
@@ -21,6 +22,7 @@ export const LoggedIn: Story = {
       name: 'Jane Doe',
     },
   },
+  play: HeaderTestExample,
 };
 
 export const LoggedOut: Story = {};
